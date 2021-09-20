@@ -135,6 +135,6 @@ app.delete('/vinrecord', (req, res) => {
     })
 })
 
-app.listen(port, () => {
-    console.log(`vincheck app listening at http://localhost:${port}`)
+app.listen(8000, () => {
+    console.log(`vincheck app listening at http://localhost:8000`)
 })
