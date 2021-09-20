@@ -135,6 +135,6 @@ app.delete('/vinrecord', (req, res) => {
     })
 })
 
-app.listen(80, "vehicle--tracking.herokuapp.com",() => {
+app.listen(8000, "vehicle--tracking.herokuapp.com",() => {
     console.log(`vincheck app listening at https://vehicle--tracking.herokuapp.com/`)
 })
