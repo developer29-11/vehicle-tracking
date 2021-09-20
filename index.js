@@ -6,17 +6,17 @@ const dayjs = require('dayjs')
 const knex = require('knex')({
     client: 'pg',
     connection: {
-        host: '127.0.0.1',
+        host: 'ec2-63-33-14-215.eu-west-1.compute.amazonaws.com',
         port: 5432,
-        user: 'postgres',
-        password: 'postgres',
-        database: 'vincheck'
+        user: 'yhcukmrkygjjff',
+        password: '152db11aaed1ed362c54f845fadbcb25a7f5cfecbdb81f79a67efd1e173cbd8e',
+        database: 'd73hqfsvgrfkam'
     },
     debug: true,
     useNullAsDefault: true
 });
 
-const port = 3000
+const port = 8000
 const vinSchema = Joi.object({
     vin: Joi.string().required(),
     currentswver: Joi.string().allow(null),
