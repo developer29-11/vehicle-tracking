@@ -135,6 +135,6 @@ app.delete('/vinrecord', (req, res) => {
     })
 })
 
-app.listen(3000,() => {
+app.listen(process.env.PORT || 5000,() => {
     console.log(`vincheck app listening at https://vehicle--tracking.herokuapp.com/`)
 })
