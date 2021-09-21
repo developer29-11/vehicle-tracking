@@ -11,7 +11,7 @@ const knex = require('knex')({
         user: 'yhcukmrkygjjff',
         password: '152db11aaed1ed362c54f845fadbcb25a7f5cfecbdb81f79a67efd1e173cbd8e',
         database: 'd73hqfsvgrfkam',
-        ssl:"true"
+        ssl: { rejectUnauthorized: false }
     },
     debug: true,
     useNullAsDefault: true
